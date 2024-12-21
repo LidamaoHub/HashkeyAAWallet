@@ -1,8 +1,8 @@
-AA Wallet for Twitter on HashKey Chain – ERC-4337 Account Abstraction
+# AA Wallet for Twitter on HashKey Chain – ERC-4337 Account Abstraction
 
 This project implements an Account Abstraction (AA) solution on HashKey Chain based on ERC-4337. By leveraging AA, each Twitter user can easily generate a contract wallet without dealing with traditional private keys, and then issue MEME tokens or perform other on-chain operations through their Twitter account.
 
-Project Overview
+## Project Overview
 
 In traditional Ethereum accounts (EOAs), users must manage their private keys directly, and a key leak can result in irreversible loss. Account Abstraction (AA) allows us to implement flexible features (e.g., social recovery, multi-signature, spending limits) at the contract level without modifying the underlying protocol.
 
@@ -11,7 +11,7 @@ This example specifically integrates with Twitter: once a Twitter account is bou
 	•	Versatile Functionality: The smart contract wallet allows you to issue MEME tokens, transfer funds, or mint NFTs; the user only needs to verify via Twitter and confirm minimal steps.
 	•	Built for HashKey Chain: Benefit from the high scalability and cost efficiency of a Layer 2 solution, with HSK serving as a native token for gas and incentives.
 
-Key Features
+## Key Features
 	1.	Twitter ID Binding
 	•	Users rely on Twitter for identity verification, avoiding the burden of managing a private key directly.
 	•	Wallet addresses can be predicted even before deployment, allowing tokens to be received in advance or facilitating community interactions.
@@ -25,7 +25,7 @@ Key Features
 	•	Deployed on HashKey Chain, which reduces costs and speeds up transactions under a Layer 2 environment.
 	•	Integrated incentives with the HSK token, fostering more developer and user participation.
 
-Contract Architecture
+## Contract Architecture
 	•	EntryPoint
 The core contract for ERC-4337, responsible for verifying and executing UserOperation requests in an account abstraction context.
 	•	SimpleAccount
@@ -36,7 +36,7 @@ Provides createAccount(owner, salt) to deploy the SimpleAccount wallet on-chain 
 	•	MemeToken: A sample contract demonstrating how a user’s AA wallet can quickly issue and manage a MEME token.
 	•	NFT Integration: If your application needs to mint or manage NFTs (e.g., for Twitter community airdrops or badges), you can integrate those features into this contract wallet as well.
 
-How to Use
+## How to Use
 
 1. Clone the Repository
 
